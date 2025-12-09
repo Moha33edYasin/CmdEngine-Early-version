@@ -5,9 +5,9 @@ animation of a Building Smashing
 
 from time import sleep
 
-from cen.settings import __version__
-from cen.animation import Animation
-from cen.models import *
+from cmn.settings import __version__
+from cmn.animation import Animation
+from cmn.models import *
 
 # Triggers, Sets
 isBegin = False

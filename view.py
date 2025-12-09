@@ -6,10 +6,10 @@ stimulation for 3D sence
 from math import pi
 from time import sleep
 
-from cen.settings import __version__
+from cmn.settings import __version__
 
-from cen.models import World
-from cen.projection import Cube, Cylinder, Sphere
+from cmn.models import World
+from cmn.projection import Cube, Cylinder, Sphere
 
 World = World(width=70, height=43, space=' ')
 
