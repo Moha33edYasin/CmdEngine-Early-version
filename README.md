@@ -75,6 +75,8 @@ while True:
     world.refresh()
 ```
 
+### **More Examples**
+You may check `Boom.py` for 2D and `view.py` for 3D.
 ---
 
 ## Roadmap
