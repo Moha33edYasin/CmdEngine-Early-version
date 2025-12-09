@@ -29,7 +29,7 @@ A variety of animation utilities for both shapes and characters:
 
 ### Tools Included
 
-* Basic math utilities: `Vec2`, `Vec3`
+* ies: `Vec2`, `Vec3`
 * Logical and helper tools for geometry & scene management
 
 ---
@@ -75,8 +75,10 @@ while True:
     world.refresh()
 ```
 
-### **More Examples**
+### **More Examples**  
+
 You may check `Boom.py` for 2D and `view.py` for 3D.
+
 ---
 
 ## Roadmap
