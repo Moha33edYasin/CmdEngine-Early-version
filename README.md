@@ -5,9 +5,9 @@ Designed for experimenting with ASCII shapes, basic 3D projections, and simple a
 
 ---
 
-## ✨ Features
+## Features
 
-### ✔️ Shape Modeling
+### Shape Modeling
 
 * **2D built-in shapes:** rectangle, triangle, circle
 * **3D built-in shapes:** cube, cylinder, sphere *(early stage)*
@@ -15,7 +15,7 @@ Designed for experimenting with ASCII shapes, basic 3D projections, and simple a
 * **Custom shape support** *(work in progress)*
 * **Text handling objects** for printing and layout
 
-### ✔️ Animation System
+### Animation System
 
 A variety of animation utilities for both shapes and characters:
 
@@ -27,7 +27,7 @@ A variety of animation utilities for both shapes and characters:
 * `text_animation()` — animated text display
 * `draw_animation()` — animated “flow of drawing” effect
 
-### ✔️ Tools Included
+### Tools Included
 
 * Basic math utilities: `Vec2`, `Vec3`
 * Logical and helper tools for geometry & scene management
@@ -77,7 +77,7 @@ while True:
 
 ---
 
-## 📘 Roadmap
+## Roadmap
 
 * [ ] Complete 3D modeling tools
 * [ ] More modifiers (extrude, bevel, distort, inset)
