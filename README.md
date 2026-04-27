@@ -48,8 +48,8 @@ square.draw()
 ### **3D Shape Example**
 
 ```python
-from models import World
-from projection import Cube
+from cmn.models import World
+from cmn.projection import Cube
 
 world = World(width=20, height=20, space=' ')
 cube = Cube(5, 5, 5)
@@ -62,18 +62,25 @@ cube.add_points()
 
 World.draw()
 ```
+This should output:
+<img width="206" height="353" alt="image" src="https://github.com/user-attachments/assets/41b274a2-a915-489b-aa5e-28dc5492de56" />
 
 ### **Animation Example**
 
 ```python
+world = World(width=30, height=25, space=' ')
+
 Animator = Animation(square)
 
-Animator.translation(15, 15, "scale")
+Animator.translation(10, 15, "grab")
 world.add_to_sence(square)
 
 while True:
     world.refresh()
 ```
+
+This should output:
+<img width="394" height="602" alt="example" src="https://github.com/user-attachments/assets/fb82d4f2-1ad2-47e8-8bd5-f965f6c07c58" />
 
 ### **More Examples**  
 
@@ -87,8 +94,6 @@ You may check `Boom.py` for 2D and `view.py` for 3D.
 * [ ] More modifiers (extrude, bevel, distort, inset)
 * [ ] Physics simulation basics
 * [ ] Full text-animation suite
-* [ ] Rendering optimization
-
 ---
 
 ## 🤝 Contributing
