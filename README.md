@@ -12,7 +12,6 @@ Designed for experimenting with ASCII shapes, basic 3D projections, and simple a
 * **2D built-in shapes:** rectangle, triangle, circle
 * **3D built-in shapes:** cube, cylinder, sphere *(early stage)*
 * **Shape modifiers:** subdivide, duplicate, mirror
-* **Custom shape support** *(work in progress)*
 * **Text handling objects** for printing and layout
 
 ### Animation System
@@ -34,12 +33,12 @@ A variety of animation utilities for both shapes and characters:
 
 ---
 
-## 🧱 Usage Examples
+## 🧱 Examples
 
 ### **2D Shape Example**
 
 ```python
-from cmn.models import Rectangle
+from cmn.models import *
 
 square = Rectangle(10, 10)
 square.draw()
@@ -48,10 +47,9 @@ square.draw()
 ### **3D Shape Example**
 
 ```python
-from cmn.models import World
-from cmn.projection import Cube
+from cmn.projection import *
 
-world = World(width=20, height=20, space=' ')
+world = World(width=30, height=25, space=' ')
 cube = Cube(5, 5, 5)
 
 cube.grab(10, 10, 0)
@@ -68,32 +66,24 @@ This should output:
 ### **Animation Example**
 
 ```python
-world = World(width=30, height=25, space=' ')
-
-Animator = Animation(square)
+from cmn.animation import Animation
+triangle = Triangle(5, 5, n_of_edges=[2, 3], unite=2, cell="★")
+Animator = Animation(triangle)
 
 Animator.translation(10, 15, "grab")
-world.add_to_sence(square)
+world.add_to_sence(triangle)
 
 while True:
     world.refresh()
 ```
 
-This should output:
-<img width="394" height="602" alt="example" src="https://github.com/user-attachments/assets/fb82d4f2-1ad2-47e8-8bd5-f965f6c07c58" />
+This should output:  
+<img width="432" height="642" alt="example" src="https://github.com/user-attachments/assets/9e7b7d40-a78f-41ae-a942-470a8caed0cd" />
 
 ### **More Examples**  
 
 You may check `Boom.py` for 2D and `view.py` for 3D.
 
----
-
-## Roadmap
-
-* [ ] Complete 3D modeling tools
-* [ ] More modifiers (extrude, bevel, distort, inset)
-* [ ] Physics simulation basics
-* [ ] Full text-animation suite
 ---
 
 ## 🤝 Contributing
