@@ -58,10 +58,10 @@ cube.rotate_y(45)
 cube.rotate_z(45)
 cube.add_points()
 
-World.draw()
+world.draw()
 ```
 This should output:
-<img width="206" height="353" alt="image" src="https://github.com/user-attachments/assets/41b274a2-a915-489b-aa5e-28dc5492de56" />
+<img width="182" height="263" alt="image" src="https://github.com/user-attachments/assets/256e4062-dfd6-44c7-8cd1-39268a068be2" />
 
 ### **Animation Example**
 
