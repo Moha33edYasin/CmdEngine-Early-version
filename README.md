@@ -28,7 +28,7 @@ A variety of animation utilities for both shapes and characters:
 
 ### Tools Included
 
-* ies: `Vec2`, `Vec3`
+* Math vectors: `Vec2`, `Vec3`
 * Logical and helper tools for geometry & scene management
 
 ---
